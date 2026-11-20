@@ -1,8 +1,8 @@
 # NEON LEONIDA — GTA VI Trophy Guide & Tracker
 
-[![make.fun](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![rank](https://make.fun/gta6-trophy-guide-01/hudas-guda/gta6-trophy-guide-01-r2b/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![reward](https://make.fun/gta6-trophy-guide-01/hudas-guda/gta6-trophy-guide-01-r2b/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/Ahmadmukafi/gta6-trophy-guide-01-r2b/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/Ahmadmukafi/gta6-trophy-guide-01-r2b/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide + tracker for all 55 PlayStation 5 trophies of GTA VI (1 platinum, 2 gold, 6 silver, 46 bronze). Round 2 of our entry for make.fun's **gta6-trophy-guide-01** ($250) — round 1 scored a judge dev provisional rate of 0.754, so this round fixes its two weaknesses: the 5 trophies round 1 left unconfirmed are all **confirmed** here (verified against live community guides on 20 Nov 2026), and every guide is deeper — exact what, where and how, plus when it can be missed.
 
