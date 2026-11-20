@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEON LEONIDA — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">NL</div>
+    <div>
+      <h1>NEON LEONIDA</h1>
+      <p class="tagline">GTA VI trophy guide &amp; tracker — all 55 PlayStation 5 trophies, every guide written in our own words, every source cited.</p>
+    </div>
+  </div>
+  <div class="platinum-meter" id="platinumMeter" role="status" aria-label="Platinum progress">
+    <svg viewBox="0 0 120 120" width="108" height="108" aria-hidden="true">
+      <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+      <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="52"></circle>
+    </svg>
+    <div class="ring-label"><strong id="earnedCount">0/55</strong><span id="earnedPct">0% to platinum</span></div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Guide sections">
+  <button type="button" data-view="roadmap" class="active">Platinum Roadmap</button>
+  <button type="button" data-view="checklist">Checklist</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="complete">100% Checklist</button>
+</nav>
+
+<main>
+  <section id="view-roadmap" class="view active" aria-label="Platinum roadmap">
+    <div class="missable-banner" id="missableBanner">
+      <strong>⚠ One trophy can be missed.</strong>
+      <span>Positive Mental Attitude — meditate on the Chapter 1 balcony before Chapter 1 ends. Every other trophy can be earned in free-roam after the story.</span>
+    </div>
+    <p class="roadmap-intro">One playthrough, about 200 hours, no online trophies, no mission replay — so the order matters. Play the story first (stages 1–2), finish the side strands (stage 3), then clean up robberies, activities and collectibles in free-roam (stages 4–6) before the 100% sweep (stage 7). Cheats disable trophies and saving, so leave them alone.</p>
+    <div class="roadmap" id="roadmap"></div>
+    <div class="nextup" id="nextUp"></div>
+  </section>
+
+  <section id="view-checklist" class="view" aria-label="Trophy checklist">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search a trophy, mission or place…" aria-label="Search trophies">
+      <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+        <button type="button" data-kind="all" class="active">All</button>
+        <button type="button" data-kind="story">Story</button>
+        <button type="button" data-kind="quest">Quests</button>
+        <button type="button" data-kind="collectibles">Collectibles</button>
+        <button type="button" data-kind="activities">Activities</button>
+        <button type="button" data-kind="robbery">Robberies</button>
+        <button type="button" data-kind="missable">Missable</button>
+        <button type="button" data-kind="hidden">Hidden</button>
+      </div>
+      <label class="grade-filter">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="toggle"><input type="checkbox" id="spoilerToggle"> Spoilers off</label>
+      <label class="toggle"><input type="checkbox" id="hideEarned"> Hide earned</label>
+      <div class="save-actions">
+        <button type="button" id="exportBtn">Export</button>
+        <label class="import-btn">Import <input type="file" id="importFile" accept="application/json,.json" hidden></label>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <p class="list-meta" id="listMeta"></p>
+    <div class="trophy-list" id="trophyList"></div>
+  </section>
+
+  <section id="view-missables" class="view" aria-label="Missable trophies">
+    <h2>Missables — what can actually go wrong</h2>
+    <p class="section-intro">GTA VI has no mission replay, so this page is the one to read before you start. The good news: only one trophy is missable, and everything else — including every 100% checklist item — stays available in free-roam after the story.</p>
+    <div id="missableList"></div>
+    <div class="safe-box">
+      <h3>Safe after the story</h3>
+      <ul>
+        <li>Every quest giver becomes available again in free-roam, even ones who vanish for chapters (Kenton, for example).</li>
+        <li>Optional missions with hourglass icons can fail, but none of them gate a trophy — there are 200–300+ optional missions and the 100% checklist needs only 100.</li>
+        <li>Some fences and magazine collectibles in story buildings disappear, but replacements exist elsewhere and no trophy needs them.</li>
+        <li>Strangers &amp; Freaks questlines stay open in free-roam.</li>
+      </ul>
+      <p class="source-note">Sources: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap; Exophase — GTA 6 Trophies (official list).</p>
+    </div>
+  </section>
+
+  <section id="view-complete" class="view" aria-label="100 percent checklist">
+    <h2>100% Checklist — the real numbers</h2>
+    <p class="section-intro">A Long Road needs the 100% checklist (Progress &gt; Stats &gt; 100% Completion), unlocked after the story. It is closer to 60% true completion — most side quests and collectibles are only partly required. These are the counts that matter.</p>
+    <div class="counters" id="counters"></div>
+    <div class="nextup" id="nextUpComplete"></div>
+  </section>
+</main>
+
+<footer>
+  <p>NEON LEONIDA — an offline guide. No network requests, no account, no tracking. Progress, notes and counters live only in your browser (localStorage) and can be exported as a file.</p>
+  <p>Official trophy names, descriptions and grades: the PlayStation 5 list as published (Exophase / PSNProfiles, 18 Nov 2026). Guides are written in our own words for this guide; each cites its source beside it. Main source: <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a>. No Rockstar logo, artwork or game screenshots are used.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
